@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Property Care — exterior cleaning | 209 / Central Valley CA — Modesto, Turlock, Hughson, Manteca, Ripon</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --color-bg:           #111314;
+  --color-surface:      #1a1d1f;
+  --color-surface-2:    #222528;
+  --color-surface-3:    #2a2e31;
+  --color-border:       #2e3235;
+  --color-border-light: #383d41;
+
+  --color-text:         #f0f0ee;
+  --color-text-muted:   #9a9fa6;
+  --color-text-subtle:  #6b7178;
+
+  --color-accent:       #3b9eff;
+  --color-accent-dark:  #2a85e0;
+  --color-accent-glow:  rgba(59, 158, 255, 0.18);
+
+  --color-star:         #f5a623;
+
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   22px;
+
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.25);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.3);
+  --shadow-lg:   0 8px 32px rgba(0,0,0,0.55), 0 2px 8px rgba(0,0,0,0.35);
+
+  --font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  --max-width: 1200px;
+  --header-h:  72px;
+
+  --transition: 0.22s ease;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================================
+   TYPOGRAPHY SCALE
+   ============================================================ */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+h3 { font-size: clamp(1.1rem, 2vw, 1.3rem); }
+
+p {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   SHARED LAYOUT
+   ============================================================ */
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.section-title {
+  margin-bottom: var(--space-md);
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.65rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background var(--transition), color var(--transition),
+              border-color var(--transition), box-shadow var(--transition),
+              transform var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border-light);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+  transform: translateY(-1px);
+}
+
+.btn:focus-visible {
+  outline: none;
+}
+
+/* ============================================================
+   PHOTO PLACEHOLDER
+   ============================================================ */
+.photo-placeholder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--color-surface-2) 0%,
+    var(--color-surface-3) 50%,
+    #1e2326 100%
+  );
+  border: 1px solid var(--color-border);
+}
+
+.photo-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(59, 158, 255, 0.04) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.photo-placeholder span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  text-align: center;
+  padding: var(--space-md);
+  line-height: 1.5;
+}
+
+.hero-placeholder {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card-image .photo-placeholder {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border-bottom: none;
+}
+
+.gallery-item .photo-placeholder {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background: rgba(17, 19, 20, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.brand-tagline {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--color-text-subtle);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.header-nav {
+  flex: 1;
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.nav-link {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  outline: none;
+}
+
+.nav-link--cta {
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+}
+
+.nav-link--cta:hover,
+.nav-link--cta:focus-visible {
+  background: var(--color-accent-dark);
+  color: #fff;
+}
+
+.header-call {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  flex-shrink: 0;
+  transition: color var(--transition);
+  margin-left: auto;
+}
+
+.header-call:hover {
+  color: var(--color-accent);
+}
+
+.header-call-icon {
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+.header-call-number {
+  display: none;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  padding: var(--space-3xl) 0 var(--space-4xl);
+  background: radial-gradient(
+    ellipse 80% 60% at 50% -10%,
+    rgba(59, 158, 255, 0.07) 0%,
+    transparent 70%
+  ),
+  var(--color-bg);
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-light);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-star);
+  letter-spacing: 0.02em;
+}
+
+.hero-headline {
+  max-width: 14ch;
+}
+
+.hero-subhead {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 56ch;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.hero-trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.hero-trust-item {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.hero-visual {
+  width: 100%;
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services {
+  padding: var(--space-4xl) 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.service-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition), box-shadow var(--transition),
+              transform var(--transition);
+}
+
+.service-card:hover {
+  border-color: var(--color-border-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.service-card-image {
+  flex-shrink: 0;
+}
+
+.service-card-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.service-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.service-card-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.service-card-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.01em;
+  margin-top: var(--space-xs);
+  transition: gap var(--transition), opacity var(--transition);
+  gap: 0.25rem;
+}
+
+.service-card-link:hover {
+  opacity: 0.8;
+  gap: 0.45rem;
+}
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-item:hover {
+  transform: scale(1.015);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================================
+   REVIEWS
+   ============================================================ */
+.reviews {
+  padding: var(--space-4xl) 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.review-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.review-card:hover {
+  border-color: var(--color-border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.review-stars {
+  font-size: 0.95rem;
+  color: var(--color-star);
+  letter-spacing: 0.05em;
+}
+
+.review-text {
+  font-size: 0.93rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  font-style: italic;
+  flex: 1;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+}
+
+.review-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.review-location {
+  font-size: 0.78rem;
+  color: var(--color-text-subtle);
+  letter-spacing: 0.03em;
+}
+
+.reviews-cta {
+  text-align: center;
+  margin-top: var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.reviews-cta-text {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.about-text {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 66ch;
+}
+
+.trust-badges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.trust-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.trust-badge-icon {
+  color: var(--color-accent);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.trust-badge-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trust-badge-text strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.trust-badge-text span {
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+}
+
+/* ============================================================
+   FORMS — GLOBAL FIELD STYLES
+   ============================================================ */
+label,
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.45rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 0.85rem 1rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--color-surface-2);
+  border: 1.5px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition),
+              background var(--transition);
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1.5;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-subtle);
+  opacity: 1;
+}
+
+.form-input:hover,
+.form-select:hover,
+.form-textarea:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+input[type="url"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--color-accent);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+  background: var(--color-surface-3);
+  outline: none;
+}
+
+/* SELECT — custom arrow */
+.form-select,
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239a9fa6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-select option,
+select option {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+/* TEXTAREA */
+.form-textarea,
+textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* Form field vertical spacing utility */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   CONTACT SECTION (generic — styles any #contact area)
+   ============================================================ */
+section#contact,
+.contact {
+  padding: var(--space-4xl) 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ============================================================
+   FOOTER (defensive)
+   ============================================================ */
+footer,
+.site-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--color-text-subtle);
+}
+
+/* ============================================================
+   FOCUS VISIBLE — global accessible ring
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   SCROLLBAR (Webkit)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-light);
+}
+
+/* ============================================================
+   MOTION — subtle only
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — sm: 480px
+   ============================================================ */
+@media (min-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-actions {
+    flex-wrap: nowrap;
+  }
+
+  .trust-badges {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .trust-badge {
+    flex: 1 1 calc(50% - var(--space-sm));
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — md: 768px
+   ============================================================ */
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+
+  .header-call-number {
+    display: inline;
+  }
+
+  .header-call {
+    margin-left: 0;
+  }
+
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3xl);
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+
+  .hero-visual {
+    flex: 1;
+    max-width: 480px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card--wide {
+    grid-column: 1 / -1;
+    flex-direction: row;
+  }
+
+  .service-card--wide .service-card-image {
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  .service-card--wide .service-card-image .photo-placeholder {
+    aspect-ratio: unset;
+    height: 100%;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    border-right: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-4xl);
+  }
+
+  .about-content {
+    flex: 1;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — lg: 1024px
+   ============================================================ */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card--wide {
+    grid-column: 1 / -1;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trust-badges {
+    flex-direction: column;
+  }
+
+  .trust-badge {
+    flex: unset;
+  }
+
+  .hero-visual {
+    max-width: 540px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — xl: 1200px
+   ============================================================ */
+@media (min-width: 1200px) {
+  .section-inner {
+    padding: 0 var(--space-xl);
+  }
+
+  .hero-inner {
+    padding: 0 var(--space-xl);
+  }
+}
+</style>
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="brand-name">Prime Property Care</span>
+      <span class="brand-tagline">Central Valley's Exterior Cleaning Experts</span>
+    </div>
+    <nav class="header-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <a href="tel:2096462432" class="header-call" aria-label="Call Prime Property Care">
+      <span class="header-call-icon" aria-hidden="true">&#9742;</span>
+      <span class="header-call-number">(209) 646-2432</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">&#11088; 205 Five-Star Google Reviews</div>
+        <h1 class="hero-headline">Your Property Deserves to Look Its Best</h1>
+        <p class="hero-subhead">Professional exterior cleaning for homes and businesses across Modesto, Turlock, Hughson, Manteca, and Ripon. Windows, gutters, pressure washing, solar panels, and Christmas lights — done right, every time.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary">Get Your Free Quote</a>
+          <a href="tel:2096462432" class="btn btn--secondary">
+            <span aria-hidden="true">&#9742;</span> (209) 646-2432
+          </a>
+        </div>
+        <ul class="hero-trust-list" aria-label="Trust signals">
+          <li class="hero-trust-item">&#10003; Licensed &amp; Insured</li>
+          <li class="hero-trust-item">&#10003; Locally Owned</li>
+          <li class="hero-trust-item">&#10003; 209 Area Proud</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="photo-placeholder hero-placeholder"><span>Prime Property Care — hero photo here</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title" id="services-heading">Complete Exterior Cleaning Services</h2>
+        <p class="section-desc">From street-level curb appeal to rooftop solar efficiency — we handle every surface on the outside of your property with professional-grade equipment and proven techniques.</p>
+      </div>
+      <div class="services-grid">
+
+        <article class="service-card" aria-label="Window Cleaning">
+          <div class="service-card-image">
+            <div class="photo-placeholder"><span>Window cleaning — client photo here</span></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Window Cleaning</h3>
+            <p class="service-card-desc">Crystal-clear results on residential and commercial windows. We use purified water-fed pole systems and traditional hand-cleaning to eliminate streaks, hard water deposits, and grime — inside and out.</p>
+            <a href="#contact" class="service-card-link">Request a Quote &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card" aria-label="Gutter Cleaning">
+          <div class="service-card-image">
+            <div class="photo-placeholder"><span>Gutter cleaning — client photo here</span></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Gutter Cleaning</h3>
+            <p class="service-card-desc">Clogged gutters cause water damage, fascia rot, and foundation issues. We clear debris, flush downspouts, and leave your drainage system flowing properly before the next rain hits.</p>
+            <a href="#contact" class="service-card-link">Request a Quote &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card" aria-label="Pressure Washing">
+          <div class="service-card-image">
+            <div class="photo-placeholder"><span>Pressure washing — client photo here</span></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Pressure Washing</h3>
+            <p class="service-card-desc">Driveways, walkways, patios, fences, and exterior walls restored to their original look. We dial in the right pressure and detergents for each surface so nothing gets damaged in the process.</p>
+            <a href="#contact" class="service-card-link">Request a Quote &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card" aria-label="Solar Panel Cleaning">
+          <div class="service-card-image">
+            <div class="photo-placeholder"><span>Solar panel cleaning — client photo here</span></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Solar Panel Cleaning</h3>
+            <p class="service-card-desc">Dust, bird droppings, and mineral deposits cut into your panels' output. Regular cleaning keeps your system producing at peak efficiency — protecting your investment and lowering your energy bill.</p>
+            <a href="#contact" class="service-card-link">Request a Quote &rarr;</a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--wide" aria-label="Christmas Light Installation">
+          <div class="service-card-image">
+            <div class="photo-placeholder"><span>Christmas light installation — client photo here</span></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Christmas Light Installation</h3>
+            <p class="service-card-desc">Skip the ladder and the headache. We design, install, and take down professional-grade holiday lighting for homes and businesses across the Central Valley. Book early — seasonal slots fill fast.</p>
+            <a href="#contact" class="service-card-link">Request a Quote &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title" id="gallery-heading">Results That Speak for Themselves</h2>
+        <p class="section-desc">Every job we finish is one we're proud to put our name on. Browse recent work from properties across the 209.</p>
+      </div>
+      <div class="gallery-grid" aria-label="Photo gallery">
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Pressure washing — driveway before &amp; after</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Window cleaning — residential home</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Gutter cleaning — completed job</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Solar panel cleaning — rooftop array</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Christmas light installation — front elevation</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="photo-placeholder"><span>Pressure washing — patio &amp; walkway</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">What Customers Say</span>
+        <h2 class="section-title" id="reviews-heading">205 Five-Star Reviews on Google</h2>
+        <p class="section-desc">Our reputation is built one job at a time. Here's what Central Valley homeowners and business owners have to say.</p>
+      </div>
+      <div class="reviews-grid">
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Tim and his crew did an incredible job on our windows and gutters. They were on time, professional, and the results were better than I expected. Our house looks brand new. We'll be using Prime Property Care every season."</p>
+          <footer class="review-author">
+            <span class="review-name">Sarah M.</span>
+            <span class="review-location">Modesto, CA</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Had them clean our solar panels and pressure wash the driveway. The difference in panel output was noticeable almost immediately. Great communication, fair pricing, and they cleaned up after themselves completely."</p>
+          <footer class="review-author">
+            <span class="review-name">David R.</span>
+            <span class="review-location">Turlock, CA</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"We hired Prime Property Care for Christmas lights last year and they made our home look amazing. The whole neighborhood was talking about it. Already booked again for this year. Highly recommend — worth every penny."</p>
+          <footer class="review-author">
+            <span class="review-name">Jennifer &amp; Mark T.</span>
+            <span class="review-location">Manteca, CA</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Called on a Monday, they were out by Wednesday. Gutters were completely packed with debris and they cleared everything out fast. Showed me photos before and after. That kind of transparency is rare — I trust these guys completely."</p>
+          <footer class="review-author">
+            <span class="review-name">Carlos V.</span>
+            <span class="review-location">Ripon, CA</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Best window cleaning I've ever had done. No streaks, no missed spots, and they were careful around our landscaping. Tim is the kind of business owner who actually cares about the quality of his work. Five stars, no question."</p>
+          <footer class="review-author">
+            <span class="review-name">Linda K.</span>
+            <span class="review-location">Hughson, CA</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"Our commercial property looks ten times better after the pressure washing. They tackled the parking lot, building exterior, and entryway. Professional operation from start to finish. We've already set up a recurring schedule."</p>
+          <footer class="review-author">
+            <span class="review-name">Angela P.</span>
+            <span class="review-location">Modesto, CA</span>
+          </footer>
+        </blockquote>
+
+      </div>
+
+      <div class="reviews-cta">
+        <p class="reviews-cta-text">Join 205+ satisfied customers across the Central Valley.</p>
+        <a href="#contact" class="btn btn--primary">Get Your Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / TRUST BAND -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="section-inner">
+      <div class="about-inner">
+        <div class="about-content">
+          <span class="section-label">About Prime Property Care</span>
+          <h2 class="section-title" id="about-heading">Local Ownership. Professional Standards. Real Accountability.</h2>
+          <p class="about-text">Prime Property Care was founded by Tim — a Central Valley local who saw a gap between what most exterior cleaning companies promised and what they actually delivered. The answer wasn't a bigger crew or fancier marketing. It was showing up on time, doing the work correctly, and treating every property like it was his own.</p>
+          <p class="about-text">Today, Prime Property Care serves homeowners and businesses throughout the 209 with the same hands-on approach Tim started with. Every job is backed by real accountability — not a call center, not a franchise. Just a local business owner who stands behind his work.</p>
+          <div class="trust-badges" aria-label="Trust credentials">
+            <div class="trust-badge">
+              <span class="trust-badge-icon" aria-hidden="true">&#9646;</span>
+              <div class="trust-badge-text">
+                <strong>Licensed &amp; Insured</strong>
+                <span>Fully covered for your protection</span>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <span class="trust-badge-icon" aria-hidden="true">&#9646;</span>
+              <div class="trust-badge-text">
+                <strong>Locally Owned</strong>
+                <span>Tim is your point of contact, start to finish</span>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <span class="trust-badge-icon" aria-hidden="true">&#9646;</span>
+              <div class="trust-badge-text">
+                <strong>205 Five-Star Reviews</strong>
+                <span>Verified Google reviews from real customers</span>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <span class="trust-badge-icon" aria-hidden="true">&#9646;</span>
+              <div class="trust-badge-text">
+                <strong>Service Area: 209</strong>
+                <span>Modesto · Turlock · Hughson · Manteca · Ripon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="photo-placeholder about-placeholder"><span>Tim — owner of Prime Property Care</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title" id="contact-heading">Request a Free Quote</h2>
+          <p class="contact-desc">Fill out the form and Tim will get back to you promptly with a straightforward quote — no pressure, no runaround. Prefer to talk? Call or text directly.</p>
+          <div class="contact-direct">
+            <a href="tel:2096462432" class="contact-direct-link contact-direct-link--phone" aria-label="Call Prime Property Care at 209-646-2432">
+              <span class="contact-direct-icon" aria-hidden="true">&#9742;</span>
+              <div class="contact-direct-text">
+                <span class="contact-direct-label">Call or Text</span>
+                <span class="contact-direct-value">(209) 646-2432</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-service-area">
+            <h3 class="contact-area-title">Service Area</h3>
+            <ul class="contact-area-list" aria-label="Cities served">
+              <li>Modesto</li>
+              <li>Turlock</li>
+              <li>Hughson</li>
+              <li>Manteca</li>
+              <li>Ripon</li>
+              <li>Surrounding 209 communities</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" name="quote-request" method="POST" action="#" aria-label="Quote request form">
+            <div class="form-field">
+              <label for="full-name" class="form-label">Full Name <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="text" id="full-name" name="full_name" class="form-input" placeholder="Your full name" required autocomplete="name" aria-required="true">
+            </div>
+            <div class="form-field">
+              <label for="phone" class="form-label">Phone Number <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(209) 000-0000" required autocomplete="tel" aria-required="true">
+            </div>
+            <div class="form-field">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="service" class="form-label">Service Needed <span class="form-required" aria-hidden="true">*</span></label>
+              <select id="service" name="service" class="form-select" required aria-required="true">
+                <option value="" disabled selected>Select a service…</option>
+                <option value="window-cleaning">Window Cleaning</option>
+                <option value="gutter-cleaning">Gutter Cleaning</option>
+                <option value="pressure-washing">Pressure Washing</option>
+                <option value="solar-panel-cleaning">Solar Panel Cleaning</option>
+                <option value="christmas-lights">Christmas Light Installation</option>
+                <option value="multiple">Multiple Services</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message" class="form-label">Tell Us About Your Property</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Property type, approximate size, specific concerns, best time to reach you…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send My Quote Request</button>
+            <p class="form-note">No spam. No obligation. Tim typically responds within a few hours during business days.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-brand-name">Prime Property Care</span>
+      <span class="footer-brand-sub">Exterior Cleaning Specialists — Central Valley, CA</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul class="footer-nav-list">
+        <li><a href="#services" class="footer-nav-link">Services</a></li>
+        <li><a href="#gallery" class="footer-nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="footer-nav-link">Reviews</a></li>
+        <li><a href="#about" class="footer-nav-link">About</a></li>
+        <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-services" aria-label="Services offered">
+      <h3 class="footer-col-title">Services</h3>
+      <ul class="footer-services-list">
+        <li>Window Cleaning</li>
+        <li>Gutter Cleaning</li>
+        <li>Pressure Washing</li>
+        <li>Solar Panel Cleaning</li>
+        <li>Christmas Light Installation</li>
+      </ul>
+    </div>
+    <div class="footer-contact-col">
+      <h3 class="footer-col-title">Contact</h3>
+      <a href="tel:2096462432" class="footer-phone">(209) 646-2432</a>
+      <p class="footer-area">Serving Modesto, Turlock, Hughson, Manteca, Ripon &amp; surrounding 209 communities.</p>
+      <ul class="footer-creds">
+        <li>&#10003; Licensed &amp; Insured</li>
+        <li>&#10003; Locally Owned by Tim</li>
+        <li>&#10003; 205 Five-Star Google Reviews</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Prime Property Care. All rights reserved. Built by <a href="https://blacklinesystems.co" class="footer-builder-link" target="_blank" rel="noopener noreferrer">Blackline Systems</a>.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  const header = document.querySelector('.site-header');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 40) {
+      header.classList.add('header--scrolled');
+    } else {
+      header.classList.remove('header--scrolled');
+    }
+  }, { passive: true });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const headerHeight = header.offsetHeight;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
